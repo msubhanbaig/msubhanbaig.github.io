@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subhan Baig – Computer Science Student at FAST-NUCES Peshawar  | AWS & Cloud Enthusiast | AI & Machine Learning Learner |
+
+" />
+  <title>Subhan Baig — AI & ML </title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ─── PARTICLE NETWORK BACKGROUND ─── -->
+  <canvas class="portfolio-canvas" id="portfolioCanvas"></canvas>
+
+  <!-- ─── NOISE OVERLAY ─── -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ─── CURSOR ─── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#resume" class="btn-hire">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-mono">Available for Work</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-line">Subhan</span>
+        <span class="name-line accent-name">Baig</span>
+      </h1>
+
+      <p class="hero-tagline">
+        Securing digital frontiers. Engineering intelligent systems.<br />
+        Building software that scales.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">
+          <i class="fa-solid fa-folder-open"></i> View Projects
+        </a>
+        <a href="#contact" class="btn-ghost">
+          <i class="fa-solid fa-terminal"></i> Get in Touch
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects-</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Technologies XP</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+  <img src="assets/pic.png" alt="" class="hero-visual-img" />
+    </div>
+
+    <div class="hero-scroll">
+      <span class="scroll-text mono-text">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image-frame">
+            <img src="assets/security-ai-portrait.svg" alt="AI and cybersecurity visual for Subhan Baig" class="about-photo" />
+          </div>
+          <div class="about-image-tags">
+            <span class="img-tag"><i class="fa-solid fa-shield-halved"></i> Kali Linux</span>
+            <span class="img-tag"><i class="fa-solid fa-brain"></i> AI / ML (Beginner)</span>
+            <span class="img-tag"><i class="fa-solid fa-code"></i> C++</span>
+            <span class="img-tag"><i class="fa-solid fa-code"></i> HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h3 class="about-headline">
+           Driven by curiosity and a passion for learning, I am actively exploring the world of network security, <span class="text-accent">experimenting with AI solutions,</span><br/>and diving into cloud infrastructure <span class="text-purple">to build secure, intelligent systems.</span>
+          </h3>
+          <p class="about-bio">
+           I'm Subhan Baig, a CS student dedicated to exploring the building blocks of modern technology. My portfolio reflects what I'm learning and building right now:
+          </p>
+          <p class="about-bio">
+            🤖 Artificial Intelligence: Developing interactive AI projects that solve practical problems and spark curiosity.<br>
+
+🔒 Cybersecurity: Just starting my journey into network security, getting familiar with Kali Linux, OSINT, and Nmap scanning techniques.<br>
+
+☁️ Cloud Computing: Embarking on my AWS journey as a complete beginner, learning how to scale and secure the applications I build.<br>
+<br>
+
+Always coding, learning, and leveling up my engineering craft.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-row">
+              <span class="info-key mono-text">location</span>
+              <span class="info-val">Pakistan 🇵🇰</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key mono-text">focus</span>
+              <span class="info-val">Cybersecurity & AI</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key mono-text">education</span>
+              <span class="info-val">CS</span>
+            </div>
+            <div class="info-row">
+              <span class="info-key mono-text">status</span>
+              <span class="info-val"><span class="pulse-dot"></span> Open to opportunities</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="#resume" class="btn-primary">
+              <i class="fa-solid fa-file-lines"></i> Download CV
+            </a>
+            <div class="social-row">
+              <a href="https://github.com/Subhan-Baig" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/subhan-baig-b3023a331" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+
+      <div class="skills-categories reveal">
+
+        <div class="skill-card glass-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-shield-virus"></i></div>
+          <h3 class="skill-card-title">Cybersecurity</h3>
+          <div class="skill-tags">
+            <span class="stag">OSINT</span>
+            <span class="stag">OSINTGram</span>
+            <span class="stag">sherlock</span>
+            <span class="stag">Nmap / Nessus</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3 class="skill-card-title">AI & Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="stag">Python</span>
+            <span class="stag">TensorFlow</span>
+            <span class="stag">PyTorch</span>
+            <span class="stag">Scikit-learn</span>
+            <span class="stag">Hugging Face</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <h3 class="skill-card-title">Web Development</h3>
+          <div class="skill-tags">
+            <span class="stag">HTML</span>
+            <span class="stag">CSS</span>
+            <span class="stag">JavaScript</span>
+            <span class="stag">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3 class="skill-card-title">Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="stag">AWS</span>
+            <span class="stag">Azure</span>
+            <span class="stag">Linux</span>
+            <span class="stag">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+</section>
+    
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="timeline reveal">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Lead Marketer</h3>
+                <span class="tc-company">AWS Community (Amazon Web Services) FAST Peshawar</span>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-date mono-text">2025 — Present</span>
+              </div>
+            </div>
+            <p class="tc-desc">•
+ Spearheaded marketing campaigns to increase awareness of AWS technologies and cloud computing on campus.<br>
+•
+ Organized workshops and seminars, effectively bridging the gap between students and industry professionals.<br>
+•
+ Managed social media presence and content creation, resulting in increased engagement and event attendance.<br>
+</p>
+
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Co-Director Career Connect</h3>
+                <span class="tc-company">Microsoft Learn Student Ambassadors (MLSA)</span>
+              </div>
+              <div class="tc-meta">
+                <span class="tc-date mono-text">2025 — 2026</span>
+              </div>
+            </div>
+            <p class="tc-desc">Microsoft Learn Student Ambassadors (MLSA)
+•
+ Directed initiatives to connect students with career opportunities in the tech industry.<br>
+•
+ Facilitated resume reviews, mock interviews, and mentorship sessions to prepare peers for recruitment drives.<br>
+•
+ Collaborated with industry experts to host career guidance webinars and networking events.<br>
+</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── ACHIEVEMENTS ─── -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Achievements</h2>
+      </div>
+
+      <div class="achievements-grid reveal">
+
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon purple"><i class="fa-solid fa-trophy"></i></div>
+          <h4 class="achieve-title">Web Nexus</h4>
+          <p class="achieve-desc">Got into top 5</p>
+        </div>
+
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon cyan"><i class="fa-solid fa-award"></i></div>
+          <h4 class="achieve-title">AWS Core Team Badge</h4>
+          <p class="achieve-desc">Got AWS Core team recognition</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid reveal">
+
+        <div class="project-card glass-card" data-category="security">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-bug-slash"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Saaf Suthra Punjab</h3>
+          <p class="project-desc">An AI-powered complaint ecosystem that automates urban waste management using YOLOv8 for real-time garbage validation and perceptual hashing (pHash) for duplicate detection. Implements a full accountability loop with smart worker dispatching and image-based fraud prevention.</p>
+          <div class="project-tags">
+            <span class="stag sm">Python + Flask</span>
+            <span class="stag sm">YOLOv8</span>
+            <span class="stag sm">Leaflet</span>
+            <span class="stag sm">OpenCV</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card featured-project" data-category="ai">
+          <div class="project-featured-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Subhan-Baig/Agentic-AI-Research-Blog/blob/main/Agentic-AI-Blog.md" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Agentic-AI Blog</h3>
+          <p class="project-desc">An autonomous AI agent designed for multi-step problem solving and deep research. It operates in a continuous decision loop (Perceive → Plan → Act → Evaluate) to break down user queries, utilize external tools, and automatically synthesize credible information from multiple sources.</p>
+        </div>
+
+        <div class="project-card glass-card" data-category="web">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-lock"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Subhan-Baig/SDA-FYP-Portal" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">FYP-Project-Portal</h3>
+          <p class="project-desc">A centralized Final Year Project (FYP) management portal built with Java to streamline academic workflows. It automates proposal submissions, supervisor allocations, and milestone tracking while ensuring role-based access control for students, faculty, and administrators.</p>
+          <div class="project-tags">
+            <span class="stag sm">Java</span>
+            <span class="stag sm">Software Design & Architecture Database Management</span>
+
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-category="ai">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Flight Management System</h3>
+          <p class="project-desc">A desktop Flight Management application built in C++ using SFML to deliver a visual user interface. It combines Object-Oriented Programming (OOP) with interactive components to manage flight routes, passenger scheduling, and real-time seat bookings through a clean, logic-driven layout.</p>
+          <div class="project-tags">
+            <span class="stag sm">C++</span>
+            <span class="stag sm">SFML</span>
+            <span class="stag sm">OOP</span>
+          </div>
+        </div>
+        </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/Subhan-Baig" target="_blank" rel="noopener" class="btn-ghost">
+          <i class="fa-brands fa-github"></i> See All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── EDUCATION ─── -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-grid reveal">
+
+        <div class="education-card glass-card">
+          <div class="education-number mono-text">01</div>
+          <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="education-title">Bachelor of Computer Science</h3>
+          <p class="education-desc">Focused on software engineering, computer systems, data structures, databases, and practical problem solving through academic projects.</p>
+          <ul class="education-list">
+            <li>FAST-NUCES</li>
+            <li>Computer Science</li>
+          </ul>
+        </div>
+
+        <div class="education-card glass-card">
+          <div class="education-number mono-text">02</div>
+          <div class="education-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3 class="education-title">Intermediate 
+          </h3>
+          <p class="education-desc">Hands-on learning around cloud foundations, AWS services, deployment concepts, and community-led technical growth.</p>
+          <ul class="education-list">
+            <li>ICS</li>
+            <li>BISE-Lahore</li>
+            <li>Unique Group of Colleges</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESUME ─── -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resume</h2>
+      </div>
+
+        <div class="resume-actions">
+          <div class="resume-cta-content">
+            <h3 class="resume-cta-title">Get the full picture</h3>
+            <p class="resume-cta-text">Download my complete resume. Available in PDF format, updated for 2026.</p>
+          </div>
+          <div class="resume-btns">
+            <a href="assets/CV.pdf" download class="btn-primary">
+              <i class="fa-solid fa-download"></i> Download PDF
+            </a>
+            <a href="https://www.linkedin.com/in/subhan-baig-b3023a331/" target="_blank" class="btn-ghost">
+              <i class="fa-solid fa-eye"></i> View Online
+            </a>
+          </div>
+          <div class="resume-updated mono-text">
+            <i class="fa-solid fa-circle-check" style="color: var(--clr-green)"></i>
+            Last updated: June 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">My inbox is open. I typically respond within 24 hours.</p>
+
+          <div class="contact-items">
+            <a href="mailto:subhanbaig123456@gmail.com" class="contact-item glass-card">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="ci-content">
+                <span class="ci-label mono-text">email</span>
+                <span class="ci-value">subhanbaig123456@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ci-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/subhan-baig-b3023a331/" target="_blank" class="contact-item glass-card">
+              <div class="ci-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="ci-content">
+                <span class="ci-label mono-text">linkedin</span>
+                <span class="ci-value">linkedin.com/in/Subhan Baig</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ci-arrow"></i>
+            </a>
+            <a href="https://github.com/Subhan-Baig" target="_blank" class="contact-item glass-card">
+              <div class="ci-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="ci-content">
+                <span class="ci-label mono-text">github</span>
+                <span class="ci-value">github.com/Subhan-Baig</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ci-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://github.com/Subhan-Baig" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/subhan-baig-b3023a331/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="mono-text footer-copy">© 2026 Subhan Baig. All rights reserved.</span>
+        <span class="mono-text footer-made">Built with <span class="text-purple">♥</span> &amp; <span class="text-accent">code</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── BACK TO TOP ─── -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ─── TOAST ─── -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
